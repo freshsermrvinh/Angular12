@@ -1,4 +1,8 @@
 <div class="test">
     <h3>Day la component Home</h3>
-    <p>OKOK</p>
+    <p>Chào bạn  {{ name }}</p>
+    <input value="{{ name }}"/>
+    <br/>
+    <h2 *ngIf="age > 30"> Bạn đã lớn tuổi</h2>
+    <h2 *ngIf="age < 18"> Bạn còn quá trẻ</h2>
 </div>
