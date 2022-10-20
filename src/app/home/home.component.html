@@ -1,8 +1,10 @@
 <div class="test">
-    <h3>Day la component Home</h3>
-    <p>Chào bạn  {{ name }}</p>
-    <input value="{{ name }}"/>
+    <h3>Day la component Home</h3>  
     <br/>
-    <h2 *ngIf="age > 30"> Bạn đã lớn tuổi</h2>
-    <h2 *ngIf="age < 18"> Bạn còn quá trẻ</h2>
+    <input type="text" [(ngModel)]="name"/>   
+    <!-- <input type ="text" value="1234"/> -->
+    <br/>
+    <p>Chào bạn  {{ name }}</p>
+    <br/>
+   <button (click) ="resetName()">reset ten</button>
 </div>
