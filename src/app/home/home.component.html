@@ -1,8 +1,40 @@
 <div class="test">
     <h3>Day la component Home</h3>
-    <p>Chào bạn  {{ name }}</p>
-    <input value="{{ name }}"/>
+    <h1>Trái cây</h1>
+    <!-- <div *ngFor="let trai of traicay; let i = index">
+        <li>{{i+1}}.{{trai}}</li>
+    </div>
     <br/>
-    <h2 *ngIf="age > 30"> Bạn đã lớn tuổi</h2>
-    <h2 *ngIf="age < 18"> Bạn còn quá trẻ</h2>
+<table>
+  <tr>
+    <th>STT</th>
+    <th>Tên</th>
+    <th>Giá</th>
+    <th>Hạ giá</th>
+  </tr>
+  <tr *ngFor="let trai of traicay2; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{trai.ten | uppercase}}</td>
+    <td class="right">
+        <span [ngClass]="{'so-am':trai.gia<0}">{{trai.gia |  currency:'VND':'symbol':'1.2'}}</span>
+    </td>
+    <td>
+        <span>{{trai.hagia | onSale | uppercase}}</span>
+    </td>
+  </tr>
+</table> -->
+Tỉnh / Thành Phố
+<select id="city"  (change)="changeCity($event)">
+    <option *ngFor ="let data of vietnamData" value="{{data.city}} ">
+        {{data.city}} 
+    </option>
+</select>
+<br/>
+Quận / Huyện
+<select id="district">
+    <option *ngFor ="let district of districts" value="{{district}} ">
+        {{district}} 
+    </option>
+</select>
 </div>
+
