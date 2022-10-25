@@ -1,0 +1,13 @@
+<p>Đây là component Cha:</p>
+<br/>
+<p>{{chaMessage}}</p>
+<!-- <br/>
+<app-con name="Tèo" (conGoi)="conGoi($event)"></app-con>
+<br/>
+<app-con name="Tí" (conGoi)="conGoi($event)"></app-con> -->
+<button (click)="choTien()"> Cho con tiền</button>
+<br/>
+<app-con #thangTeo name="Tèo" (conGoi)="conGoi($event)"></app-con>
+<br/>
+<app-con #thangTi name="Tí" (conGoi)="conGoi($event)"></app-con>
+

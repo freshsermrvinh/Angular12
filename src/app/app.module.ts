@@ -13,6 +13,8 @@ import { HighLightDirective } from './Directives/high-light.directive';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetDataComponent } from './get-data/get-data.component';
 import { PostDataComponent } from './post-data/post-data.component';
+import { ChaComponent } from './cha/cha.component';
+import { ConComponent } from './con/con.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PostDataComponent } from './post-data/post-data.component';
     HighLightDirective,
     ReactiveFormComponent,
     GetDataComponent,
-    PostDataComponent 
+    PostDataComponent,
+    ChaComponent,
+    ConComponent 
   ],
   imports: [
     BrowserModule,
