@@ -12,6 +12,7 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 import { HighLightDirective } from './Directives/high-light.directive';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetDataComponent } from './get-data/get-data.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GetDataComponent } from './get-data/get-data.component';
     PageNotFoundComponentComponent,
     HighLightDirective,
     ReactiveFormComponent,
-    GetDataComponent 
+    GetDataComponent,
+    PostDataComponent 
   ],
   imports: [
     BrowserModule,
